@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shandika Blog — Tempat berbagi cerita, pemikiran, dan inspirasi seputar teknologi, desain, dan kehidupan.">
+    <meta name="keywords" content="blog, teknologi, desain, programming, lifestyle">
+    <meta name="author" content="Shandika">
+    <title>Shandika Blog — Cerita, Teknologi & Inspirasi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="#" class="logo" id="logo">
+                <span class="logo-icon">S</span>
+                <span class="logo-text">Shandika<span class="logo-dot">.</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#articles" class="nav-link">Articles</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="search-btn" id="searchBtn" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-overlay-content">
+            <button class="search-close" id="searchClose" aria-label="Close search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="search-input-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" class="search-input" id="searchInput" placeholder="Cari artikel, topik, atau kata kunci...">
+            </div>
+            <div class="search-results" id="searchResults">
+                <p class="search-hint">Ketik untuk mulai mencari...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">✨ Blog Pribadi</span>
+                <h1 class="hero-title">
+                    Cerita, <span class="gradient-text">Teknologi</span>
+                    <br>& Inspirasi
+                </h1>
+                <p class="hero-desc">Menjelajahi dunia teknologi, berbagi pengalaman coding, dan menemukan inspirasi di setiap baris kode. Selamat datang di ruang kreatif saya.</p>
+                <div class="hero-cta">
+                    <a href="#articles" class="btn btn-primary" id="ctaExplore">
+                        Jelajahi Artikel
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="#about" class="btn btn-outline" id="ctaAbout">Tentang Saya</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="120">0</span>
+                        <span class="stat-label">Artikel</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="45">0</span>
+                        <span class="stat-label">Topik</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-label">Tahun</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hero-card-img">
+                        <div class="hero-card-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                        </div>
+                    </div>
+                    <div class="hero-card-body">
+                        <span class="hero-card-tag">Featured</span>
+                        <h3>Membangun Masa Depan Digital</h3>
+                        <p>Eksplorasi tren teknologi terbaru dan dampaknya terhadap kehidupan kita.</p>
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">🚀 Web Dev</div>
+                <div class="floating-badge badge-2">💡 Tips & Tricks</div>
+                <div class="floating-badge badge-3">🎨 UI/UX</div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#featured" class="scroll-indicator" aria-label="Scroll down">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="section featured-section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🔥 Pilihan Editor</span>
+                <h2 class="section-title">Artikel <span class="gradient-text">Unggulan</span></h2>
+                <p class="section-desc">Pilihan terbaik minggu ini yang wajib kamu baca</p>
+            </div>
+            <div class="featured-grid">
+                <a href="wayang-kulit.html" class="featured-main" id="featuredMain">
+                    <div class="featured-img">
+                        <div class="featured-img-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        </div>
+                        <div class="featured-overlay">
+                            <span class="featured-category">Kebudayaan</span>
+                        </div>
+                    </div>
+                    <div class="featured-info">
+                        <div class="post-meta">
+                            <span class="meta-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                22 April 2026
+                            </span>
+                            <span class="meta-read">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                12 min baca
+                            </span>
+                        </div>
+                        <h3 class="featured-title">Wayang Kulit: Warisan Agung Seni Pertunjukan Indonesia</h3>
+                        <p class="featured-excerpt">Menyelami keindahan dan filosofi Wayang Kulit, warisan budaya Indonesia yang telah diakui UNESCO sebagai Masterpiece of Oral and Intangible Heritage of Humanity...</p>
+                        <span class="read-more" id="readMoreFeatured">
+                            Baca Selengkapnya
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </span>
+                    </div>
+                </a>
+                <div class="featured-side">
+                    <article class="featured-side-card" id="featuredSide1">
+                        <div class="side-card-img">
+                            <div class="side-img-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </div>
+                        </div>
+                        <div class="side-card-info">
+                            <span class="side-category">Programming</span>
+                            <h4>10 Tips JavaScript Modern yang Wajib Dikuasai Developer</h4>
+                            <span class="side-meta">20 April 2026 · 5 min</span>
+                        </div>
+                    </article>
+                    <article class="featured-side-card" id="featuredSide2">
+                        <div class="side-card-img">
+                            <div class="side-img-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </div>
+                        </div>
+                        <div class="side-card-info">
+                            <span class="side-category">Desain</span>
+                            <h4>Prinsip UI/UX Design yang Membuat Produk Digital Lebih Manusiawi</h4>
+                            <span class="side-meta">18 April 2026 · 6 min</span>
+                        </div>
+                    </article>
+                    <article class="featured-side-card" id="featuredSide3">
+                        <div class="side-card-img">
+                            <div class="side-img-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </div>
+                        </div>
+                        <div class="side-card-info">
+                            <span class="side-category">Karir</span>
+                            <h4>Remote Working: Panduan Lengkap Bekerja dari Mana Saja</h4>
+                            <span class="side-meta">15 April 2026 · 7 min</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="section articles-section" id="articles">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">📝 Terbaru</span>
+                <h2 class="section-title">Semua <span class="gradient-text">Artikel</span></h2>
+                <p class="section-desc">Jelajahi koleksi lengkap tulisan saya</p>
+            </div>
+            <div class="filter-tabs" id="filterTabs">
+                <button class="filter-tab active" data-filter="all">Semua</button>
+                <button class="filter-tab" data-filter="teknologi">Teknologi</button>
+                <button class="filter-tab" data-filter="programming">Programming</button>
+                <button class="filter-tab" data-filter="desain">Desain</button>
+                <button class="filter-tab" data-filter="lifestyle">Lifestyle</button>
+                <button class="filter-tab" data-filter="karir">Karir</button>
+            </div>
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Cards will be injected by JS -->
+            </div>
+            <div class="load-more-wrapper">
+                <button class="btn btn-primary load-more-btn" id="loadMoreBtn">
+                    Muat Lebih Banyak
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section categories-section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">📂 Kategori</span>
+                <h2 class="section-title">Jelajahi <span class="gradient-text">Topik</span></h2>
+                <p class="section-desc">Temukan artikel berdasarkan topik favoritmu</p>
+            </div>
+            <div class="categories-grid" id="categoriesGrid">
+                <a href="#" class="category-card" id="catTech">
+                    <div class="category-icon">💻</div>
+                    <h3>Teknologi</h3>
+                    <p>Tren dan inovasi terbaru di dunia tech</p>
+                    <span class="category-count">32 artikel</span>
+                </a>
+                <a href="#" class="category-card" id="catCode">
+                    <div class="category-icon">⚡</div>
+                    <h3>Programming</h3>
+                    <p>Tutorial, tips, dan best practices coding</p>
+                    <span class="category-count">28 artikel</span>
+                </a>
+                <a href="#" class="category-card" id="catDesign">
+                    <div class="category-icon">🎨</div>
+                    <h3>Desain</h3>
+                    <p>UI/UX, graphic design, dan creativitas</p>
+                    <span class="category-count">24 artikel</span>
+                </a>
+                <a href="#" class="category-card" id="catLife">
+                    <div class="category-icon">🌱</div>
+                    <h3>Lifestyle</h3>
+                    <p>Produktivitas dan pengembangan diri</p>
+                    <span class="category-count">18 artikel</span>
+                </a>
+                <a href="#" class="category-card" id="catCareer">
+                    <div class="category-icon">🚀</div>
+                    <h3>Karir</h3>
+                    <p>Tips karir dan pengembangan profesional</p>
+                    <span class="category-count">15 artikel</span>
+                </a>
+                <a href="#" class="category-card" id="catReview">
+                    <div class="category-icon">📱</div>
+                    <h3>Review</h3>
+                    <p>Review gadget, tools, dan software</p>
+                    <span class="category-count">12 artikel</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-card" id="newsletterCard">
+                <div class="newsletter-bg-shapes">
+                    <div class="nl-shape nl-shape-1"></div>
+                    <div class="nl-shape nl-shape-2"></div>
+                </div>
+                <div class="newsletter-content">
+                    <span class="newsletter-icon">📬</span>
+                    <h2>Dapatkan Artikel Terbaru</h2>
+                    <p>Bergabung dengan 2,000+ subscriber dan dapatkan artikel pilihan langsung di inbox kamu. Gratis, tanpa spam.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="newsletter-input-group">
+                            <input type="email" placeholder="Masukkan email kamu..." required id="newsletterEmail">
+                            <button type="submit" class="btn btn-primary" id="newsletterSubmit">
+                                Subscribe
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <div class="about-img-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                    </div>
+                    <div class="about-decoration"></div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">👋 Tentang Saya</span>
+                    <h2 class="section-title">Halo, Saya <span class="gradient-text">Shandika</span></h2>
+                    <p>Seorang developer dan penulis yang passionate tentang teknologi. Saya percaya bahwa teknologi dan kata-kata memiliki kekuatan untuk mengubah dunia.</p>
+                    <p>Melalui blog ini, saya berbagi pengalaman, pengetahuan, dan perspektif saya tentang dunia digital yang terus berkembang. Dari tutorial programming hingga pemikiran tentang tren teknologi terkini.</p>
+                    <div class="about-skills">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">UI/UX</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Writing</span>
+                    </div>
+                    <div class="about-social">
+                        <a href="#" class="social-link" id="socialGithub" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                        <a href="#" class="social-link" id="socialTwitter" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" id="socialLinkedin" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="#" class="social-link" id="socialInstagram" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">💬 Hubungi Saya</span>
+                <h2 class="section-title">Mari <span class="gradient-text">Terhubung</span></h2>
+                <p class="section-desc">Punya pertanyaan atau ingin berkolaborasi? Kirim pesan!</p>
+            </div>
+            <div class="contact-grid">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Nama</label>
+                            <input type="text" id="contactName" placeholder="Nama lengkap kamu" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subjek</label>
+                        <input type="text" id="contactSubject" placeholder="Tentang apa?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Pesan</label>
+                        <textarea id="contactMessage" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="contactSubmit">
+                        Kirim Pesan
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-info-card" id="contactInfoEmail">
+                        <div class="contact-info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@shandika.dev</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card" id="contactInfoLocation">
+                        <div class="contact-info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Bali, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card" id="contactInfoAvail">
+                        <div class="contact-info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h4>Availability</h4>
+                            <p>Freelance & Kolaborasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">S</span>
+                        <span class="logo-text">Shandika<span class="logo-dot">.</span></span>
+                    </a>
+                    <p>Berbagi cerita, teknologi, dan inspirasi melalui tulisan. Karena setiap baris kata memiliki makna.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                        <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Teknologi</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Desain</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Karir</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shandika. All rights reserved. Made with ❤️ in Bali.</p>
+                <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <svg class="toast-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span id="toastMessage">Success!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
