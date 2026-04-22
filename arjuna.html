@@ -1,3 +1,334 @@
-<H1>tes
+<!DOCTYPE html>
+<html lang="id">
 
-</H1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mengenal Arjuna, salah satu tokoh utama dalam wayang kulit yang merupakan ksatria utama dalam cerita Mahabharata.">
+    <meta name="keywords" content="wayang kulit, arjuna, mahabharata, tokoh wayang, budaya indonesia">
+    <meta name="author" content="Shandika">
+    <title>Arjuna: Kesatria Pemberani Nusantara — Shandika Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo" id="logo">
+                <span class="logo-icon">S</span>
+                <span class="logo-text">Shandika<span class="logo-dot">.</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#articles" class="nav-link">Articles</a></li>
+                <li><a href="index.html#categories" class="nav-link">Categories</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Hero -->
+    <header class="article-hero" id="articleHero">
+        <div class="article-hero-bg">
+            <div class="article-hero-overlay"></div>
+            <img src="" alt="Arjuna Wayang Kulit" class="article-hero-img" id="heroImage">
+            <div class="article-hero-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                    <circle cx="8.5" cy="8.5" r="1.5" />
+                    <polyline points="21 15 16 10 5 21" />
+                </svg>
+                <span>Hero Image — Arjuna Wayang Kulit</span>
+            </div>
+        </div>
+        <div class="container article-hero-content">
+            <a href="index.html" class="back-link" id="backLink">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12" />
+                    <polyline points="12 19 5 12 12 5" />
+                </svg>
+                Kembali ke Blog
+            </a>
+            <div class="article-hero-meta">
+                <span class="article-category-badge" id="articleCategoryBadge">Kebudayaan</span>
+                <span class="article-read-time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    8 min baca
+                </span>
+            </div>
+            <h1 class="article-hero-title" id="articleTitle">Arjuna: Kesatria Pemberani Nusantara</h1>
+            <p class="article-hero-excerpt">Mengenal sosok Arjuna, salah satu ksatria utama dalam epos Mahabharata yang dipercaya sebagai simbol keberanian, kebijaksanaan, dan dedikasi dalam pertunjukan wayang kulit.</p>
+            <div class="article-hero-author">
+                <div class="author-avatar-lg">S</div>
+                <div>
+                    <span class="author-name-lg">Shandika</span>
+                    <span class="author-date">22 April 2026</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="reading-progress" id="readingProgress">
+        <div class="reading-progress-bar" id="readingProgressBar"></div>
+    </div>
+
+    <!-- Article Content -->
+    <main class="article-main">
+        <div class="container">
+            <div class="article-layout">
+                <!-- Sidebar TOC -->
+                <aside class="article-sidebar" id="articleSidebar">
+                    <div class="toc-card">
+                        <h3 class="toc-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="8" y1="6" x2="21" y2="6" />
+                                <line x1="8" y1="12" x2="21" y2="12" />
+                                <line x1="8" y1="18" x2="21" y2="18" />
+                                <line x1="3" y1="6" x2="3.01" y2="6" />
+                                <line x1="3" y1="12" x2="3.01" y2="12" />
+                                <line x1="3" y1="18" x2="3.01" y2="18" />
+                            </svg>
+                            Daftar Isi
+                        </h3>
+                        <nav class="toc-nav" id="tocNav">
+                            <a href="#section-pengenalan" class="toc-link active">Pengenalan Arjuna</a>
+                            <a href="#section-garis-besar" class="toc-link">Garis Besar Cerita</a>
+                            <a href="#section-karakter" class="toc-link">Karakteristik & Ciri Fisik</a>
+                            <a href="#section-sifat" class="toc-link">Sifat & Watak</a>
+                            <a href="#section-senjata" class="toc-link">Senjata Sakti</a>
+                            <a href="#section-filosofi" class="toc-link">Filosofi & Makna</a>
+                            <a href="#section-penutup" class="toc-link">Penutup</a>
+                        </nav>
+                    </div>
+                    <div class="share-card">
+                        <h4>Bagikan Artikel</h4>
+                        <div class="share-buttons">
+                            <button class="share-btn" id="shareTwitter" aria-label="Share to Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                </svg>
+                            </button>
+                            <button class="share-btn" id="shareFacebook" aria-label="Share to Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg>
+                            </button>
+                            <button class="share-btn" id="shareCopy" aria-label="Copy link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Article Body -->
+                <article class="article-body" id="articleBody">
+                    <!-- Intro -->
+                    <div class="article-intro">
+                        <p class="lead-text">Arjuna adalah <strong>tokoh utama dalam epos Mahabharata</strong> yang dalam wayang kulit dijadikan simbol
+                            keberanian, kebijaksanaan, dan dedikasi seorang kesatria sejati. Ia dikenal sebagai putra Indra (dewa langit) dan 
+                            seorang pemanah sejati yang tak terkalahkan.
+                        </p>
+                    </div>
+
+                    <!-- Section 1: Pengenalan -->
+                    <section id="section-pengenalan" class="content-section">
+                        <h2>
+                            <span class="section-number">01</span>
+                            Pengenalan Arjuna
+                        </h2>
+
+                        <p>Dalam tradisi wayang kulit Nusantara, <strong>Arjuna</strong> adalah salah satu tokoh paling populer dan dicintai oleh masyarakat. 
+                        Ia adalah putra ketiga dari lima bersaudara Pandawa (Puntadewa, Werkudara, Arjuna, Nakula, dan Sadewa). Sebagai seorang ksatria, 
+                        Arjuna memiliki peran yang sangat penting dalam peperangan Baratayuda, yaitu pertempuran besar antara Pandawa dan Kurawa.</p>
+
+                        <p>Arjuna dikenal sebagai figur yang mencerminkan <strong>kesempurnaan seorang prajurit</strong> — tidak hanya dalam hal keahlian bertempur, 
+                        tetapi juga kebijaksanaan, kegigihan, dan integritas moral. Dalam pertunjukan wayang, Arjuna sering menjadi tokoh yang memberikan 
+                        ajaran dan nasihat kepada karakter lain maupun kepada penonton.</p>
+                    </section>
+
+                    <!-- Section 2: Garis Besar Cerita -->
+                    <section id="section-garis-besar" class="content-section">
+                        <h2>
+                            <span class="section-number">02</span>
+                            Garis Besar Cerita
+                        </h2>
+
+                        <p>Perjalanan Arjuna dimulai sejak ia dilahirkan sebagai putra Pandu dan Kunti. Arjuna mendapat nama tersebut karena 
+                        kulit dan badannya berwarna putih seperti <strong>kristal atau perak berkilau</strong> (arjuna berarti "putih" atau "terang" dalam Sanskerta). 
+                        Sejak kecil, Arjuna menunjukkan bakat luar biasa dalam menguasai ilmu peperangan dan berbagai senjata.</p>
+
+                        <p>Salah satu cerita paling terkenal adalah ketika Arjuna menjalani <strong>pertapaan untuk mendapatkan senjata Pasupati</strong> — 
+                        senjata paling ampuh yang dapat menghancurkan segalanya. Dalam perjalanannya, Arjuna juga bertemu dengan Dewa Krishna yang kemudian 
+                        memberinya nasihat bijak melalui "Bhagavad Gita". Cerita ini menggambarkan bagaimana Arjuna menghadapi dilema moral dalam pertempuran 
+                        Baratayuda.</p>
+                    </section>
+
+                    <!-- Section 3: Karakteristik & Ciri Fisik -->
+                    <section id="section-karakter" class="content-section">
+                        <h2>
+                            <span class="section-number">03</span>
+                            Karakteristik & Ciri Fisik
+                        </h2>
+
+                        <p>Dalam pertunjukan wayang kulit, Arjuna memiliki <strong>ciri-ciri fisik yang khas dan mudah dikenali</strong>:</p>
+
+                        <ul class="article-list">
+                            <li><strong>Warna Kulit:</strong> Putih bersinar atau berwarna terang, mencerminkan kesucian dan kemuliaan</li>
+                            <li><strong>Postur Tubuh:</strong> Tinggi, tegap, dan berisi, menggambarkan kekuatan dan kemampuan bertarung</li>
+                            <li><strong>Wajah:</strong> Tampan dan berwibawa dengan hidung yang mancung, mata berbentuk almond yang tajam</li>
+                            <li><strong>Rambut:</strong> Panjang, ikatan rambut (sanggul) yang rapi menunjukkan status bangsawan</li>
+                            <li><strong>Pakaian:</strong> Mengenakan baju perang (jarik dan udeng) dengan ornamen emas, hiasan dada (gada), dan gelang emas</li>
+                            <li><strong>Senjata:</strong> Selalu membawa busur dan panah, kadang juga pedang (keris) dan senjata lainnya</li>
+                        </ul>
+
+                        <p>Gaya pergerakan wayang Arjuna dalam pertunjukan adalah <strong>halus namun penuh kekuatan</strong>, mencerminkan karakter yang matang dan bijaksana.</p>
+                    </section>
+
+                    <!-- Section 4: Sifat & Watak -->
+                    <section id="section-sifat" class="content-section">
+                        <h2>
+                            <span class="section-number">04</span>
+                            Sifat & Watak
+                        </h2>
+
+                        <p>Arjuna memiliki berbagai sifat mulia yang membuatnya menjadi tokoh yang dikagumi dalam tradisi wayang:</p>
+
+                        <ul class="article-list">
+                            <li><strong>Berani & Gagah:</strong> Tidak takut menghadapi musuh meskipun dalam situasi yang mustahil sekalipun</li>
+                            <li><strong>Bijaksana:</strong> Selalu memikirkan akibat dari setiap keputusan dan terbuka terhadap nasihat orang lain</li>
+                            <li><strong>Setia & Dapat Diandalkan:</strong> Selalu membantu saudara-saudaranya dan menjaga komitmen kepada Dharma (keadilan)</li>
+                            <li><strong>Tanggung Jawab:</strong> Rela mengorbankan diri untuk kebaikan bersama</li>
+                            <li><strong>Rendah Hati Namun Percaya Diri:</strong> Menyadari keterbatasan diri tetapi yakin pada kebenaran yang diperjuangkan</li>
+                            <li><strong>Cinta Kepada Keadilan:</strong> Tidak pernah menyerah untuk membela yang benar melawan yang salah</li>
+                        </ul>
+
+                        <p>Melalui sifat-sifat ini, Arjuna menjadi <strong>teladan bagi masyarakat Indonesia</strong> tentang bagaimana seorang pemimpin dan prajurit yang sejati 
+                        seharusnya berperilaku dan berpikir.</p>
+                    </section>
+
+                    <!-- Section 5: Senjata Sakti -->
+                    <section id="section-senjata" class="content-section">
+                        <h2>
+                            <span class="section-number">05</span>
+                            Senjata Sakti
+                        </h2>
+
+                        <p>Arjuna terkenal dengan berbagai senjata sakti yang ia miliki dan kuasai:</p>
+
+                        <ul class="article-list">
+                            <li><strong>Busur Gandiva:</strong> Busur paling terkenal milik Arjuna, senjata yang tak tertandingi dan diberi oleh Dewa Vayu. Busur ini dapat menembakkan 
+                            panah tanpa pernah habis dan tidak dapat dikalahkan oleh senjata apapun.</li>
+                            <li><strong>Panah Pasupati:</strong> Panah paling sakti yang hanya dapat digunakan untuk situasi kehidupan atau mati. Ketika ditembakkan, panah ini tidak akan pernah 
+                            meleset dari sasarannya.</li>
+                            <li><strong>Dwijendra Rekarahja:</strong> Senjata lain yang sangat dahsyat dengan berbagai kemampuan supranatural</li>
+                            <li><strong>Keris & Pedang:</strong> Selain busur dan panah, Arjuna juga ahli menggunakan keris dan pedang dalam pertarungan jarak dekat</li>
+                        </ul>
+
+                        <p>Kepemilikan senjata-senjata ini bukan hanya semata-mata untuk pertarungan, tetapi juga <strong>simbol tanggung jawab dan kekuatan yang harus digunakan dengan bijaksana</strong>.</p>
+                    </section>
+
+                    <!-- Section 6: Filosofi & Makna -->
+                    <section id="section-filosofi" class="content-section">
+                        <h2>
+                            <span class="section-number">06</span>
+                            Filosofi & Makna
+                        </h2>
+
+                        <p>Dalam wayang kulit, kehadiran Arjuna memiliki makna filosofis yang mendalam. Ia mewakili:</p>
+
+                        <ul class="article-list">
+                            <li><strong>Dharma (Keadilan):</strong> Perjuangan Arjuna selalu untuk menegakkan keadilan dan memerangi ketidakadilan</li>
+                            <li><strong>Kebajikan & Moralitas:</strong> Setiap tindakan Arjuna dipandu oleh prinsip-prinsip moral yang kuat</li>
+                            <li><strong>Pengorbanan Diri:</strong> Arjuna rela mengorbankan kesenangan pribadinya untuk kepentingan bersama</li>
+                            <li><strong>Pencerahan Rohani:</strong> Kisah Arjuna banyak digunakan untuk mengajarkan cara menemukan kedamaian batin dan pemahaman spiritual</li>
+                            <li><strong>Manusia Sempurna:</strong> Arjuna adalah gambaran ideal dari seorang manusia yang seimbang — kuat namun bijaksana, berani namun rendah hati</li>
+                        </ul>
+
+                        <p>Melalui wayang Arjuna, masyarakat Jawa dan Nusantara secara luas belajar tentang nilai-nilai kehidupan yang universal dan timeless.</p>
+                    </section>
+
+                    <!-- Section 7: Penutup -->
+                    <section id="section-penutup" class="content-section">
+                        <h2>
+                            <span class="section-number">07</span>
+                            Penutup
+                        </h2>
+
+                        <p>Arjuna adalah <strong>lebih dari sekadar tokoh dalam pertunjukan wayang</strong> — ia adalah cerminan dari nilai-nilai luhur yang telah dipertahankan oleh budaya Nusantara 
+                        selama berabad-abad. Melalui cerita-ceritanya yang epik, generasi demi generasi telah belajar tentang keberaniana, kebijaksanaan, dan dedikasi.</p>
+
+                        <p>Dalam era modern ini, pesan-pesan yang dibawa Arjuna tetap relevan dan penting untuk diingat. Sosok Arjuna mengajarkan kita bahwa 
+                        <strong>keberanian sejati bukan hanya tentang kekuatan fisik, tetapi juga tentang integritas moral, kebijaksanaan, dan kemampuan untuk membuat keputusan yang tepat 
+                        demi kebaikan bersama</strong>.</p>
+
+                        <p>Wayang Arjuna akan terus hidup dalam hati masyarakat Indonesia sebagai simbol kesempurnaan dan inspirasi untuk menjalani kehidupan dengan penuh makna dan tujuan yang luhur.</p>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Shandika. Semua hak dilindungi. Dibuat dengan <span style="color: red;">❤</span> untuk melestarikan budaya Nusantara.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="article.js"></script>
+</body>
+
+</html>
