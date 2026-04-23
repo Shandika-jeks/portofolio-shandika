@@ -39,8 +39,8 @@
     --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-display: 'Playfair Display', Georgia, serif;
+    --font-headline: 'Montserrat', sans-serif;
+    --font-body: 'Poppins', sans-serif;
 }
 
 /* Dark Mode */
@@ -83,12 +83,16 @@ html {
 }
 
 body {
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.7;
     overflow-x: hidden;
     transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
 }
 
 a {
@@ -147,6 +151,7 @@ input, textarea {
     border-radius: var(--radius-full);
     font-weight: 600;
     font-size: 0.95rem;
+    font-family: var(--font-headline);
     transition: all var(--transition-base);
     cursor: pointer;
     text-decoration: none;
@@ -516,7 +521,7 @@ input, textarea {
 }
 
 .hero-title {
-    font-family: var(--font-display);
+    font-family: var(--font-headline);
     font-size: 3.8rem;
     font-weight: 700;
     line-height: 1.15;
@@ -740,7 +745,7 @@ input, textarea {
 }
 
 .section-title {
-    font-family: var(--font-display);
+    font-family: var(--font-headline);
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 12px;
@@ -1245,7 +1250,7 @@ input, textarea {
 }
 
 .newsletter-content h2 {
-    font-family: var(--font-display);
+    font-family: var(--font-headline);
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 16px;
