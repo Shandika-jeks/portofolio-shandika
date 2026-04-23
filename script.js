@@ -95,6 +95,24 @@ const articlesData = [
     },
     {
         id: 11,
+        title: "Strategi Digital Marketing 2026: Panduan Komprehensif",
+        excerpt: "Pelajari strategi digital marketing terbaru untuk meningkatkan visibility brand Anda di era digital ini dengan teknik yang terbukti efektif.",
+        category: "teknologi",
+        date: "23 April 2026",
+        readTime: "8 min",
+        icon: "📊"
+    },
+    {
+        id: 12,
+        title: "Content Creation 101: Dari Ide hingga Publikasi",
+        excerpt: "Panduan lengkap membuat konten yang menarik, dari brainstorming ide hingga strategi publikasi di berbagai platform media sosial.",
+        category: "lifestyle",
+        date: "22 April 2026",
+        readTime: "7 min",
+        icon: "🎥"
+    },
+    {
+        id: 13,
         title: "Freelancing Tips: Memulai Bisnis Sebagai Developer",
         excerpt: "Panduan lengkap memulai perjalanan freelancing sebagai developer, dari pricing hingga manajemen klien.",
         category: "karir",
@@ -103,7 +121,7 @@ const articlesData = [
         icon: "💼"
     },
     {
-        id: 12,
+        id: 14,
         title: "Progressive Web Apps (PWA): The Future of Mobile",
         excerpt: "Mengapa PWA menjadi masa depan pengembangan aplikasi mobile dan bagaimana cara membuatnya.",
         category: "teknologi",

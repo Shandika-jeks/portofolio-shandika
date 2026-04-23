@@ -1598,6 +1598,74 @@ input, textarea {
     font-size: 0.85rem;
 }
 
+/* ============================================
+   Creation Section
+   ============================================ */
+.creation-section {
+    background: var(--gradient-card);
+}
+
+.creation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 50px;
+}
+
+.creation-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
+}
+
+.creation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.creation-card-img {
+    height: 200px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.creation-img-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-1);
+    opacity: 0.5;
+}
+
+.creation-card-content {
+    padding: 32px;
+}
+
+.creation-card-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.creation-card-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.btn-sm {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+}
+
 .back-to-top {
     width: 44px;
     height: 44px;
